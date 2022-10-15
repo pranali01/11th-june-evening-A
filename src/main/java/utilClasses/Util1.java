@@ -57,4 +57,8 @@ public class Util1 {
 		Actions act=new Actions(driver);
 		act.moveToElement(element).perform();		
 	}
+	public static void hoverToElement(WebDriver driver,WebElement element,int a) {
+		Actions act=new Actions(driver);
+		act.moveToElement(element).perform();		
+	}
 }
