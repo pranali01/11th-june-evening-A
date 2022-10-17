@@ -12,6 +12,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -50,5 +51,14 @@ public class Util1 {
 		File destination=new File(path);
 		FileHandler.copy(source, destination);
 		return path;
+	}
+	
+	public static void hoverToElement(WebDriver driver,WebElement element) {
+		Actions act=new Actions(driver);
+		act.moveToElement(element).perform();		
+	}
+	public static void hoverToElement(WebDriver driver,WebElement element,int a) {
+		Actions act=new Actions(driver);
+		act.moveToElement(element).perform();		
 	}
 }
