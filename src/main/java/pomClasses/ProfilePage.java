@@ -43,7 +43,6 @@ WebDriver driver;
 	public ProfilePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
-		
 		this.driver=driver;
 	}
 	
